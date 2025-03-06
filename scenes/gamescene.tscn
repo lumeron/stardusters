@@ -13,8 +13,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1024.0
 offset_top = 600.0
-offset_right = -1024.0
-offset_bottom = -600.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -28,6 +26,7 @@ offset_bottom = 40.0
 color = Color(0.562958, 0.562958, 0.562958, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 5
 
 [node name="MenuContainer" type="Control" parent="CanvasLayer"]
 custom_minimum_size = Vector2(2048, 1200)
@@ -38,18 +37,17 @@ offset_bottom = 40.0
 script = ExtResource("1_mlc5d")
 
 [node name="MainMenu" type="Control" parent="CanvasLayer/MenuContainer"]
-visible = false
 anchors_preset = 0
-offset_right = 2048.0
-offset_bottom = 1200.0
+offset_right = 1024.0
+offset_bottom = 600.0
 script = ExtResource("2_vlet2")
 
 [node name="quit_button" type="Button" parent="CanvasLayer/MenuContainer/MainMenu"]
 layout_mode = 0
-offset_left = 998.0
-offset_top = 520.0
-offset_right = 1037.0
-offset_bottom = 551.0
+offset_left = 504.0
+offset_top = 428.0
+offset_right = 543.0
+offset_bottom = 459.0
 text = "quit"
 
 [node name="Game" type="Node2D" parent="."]

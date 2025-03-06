@@ -50,9 +50,9 @@ variables={
 
 [display]
 
-window/size/viewport_width=2048
-window/size/viewport_height=1200
-window/stretch/mode="canvas_items"
+window/size/viewport_width=1024
+window/size/viewport_height=600
+window/stretch/aspect="expand"
 
 [editor_plugins]
 
