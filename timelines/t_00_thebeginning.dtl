@@ -1,0 +1,5 @@
+[style name="t_dialogic_theme"]
+[background arg="res://assets/b_00_thebeginning.png" fade="0.5"]
+join c_talon right
+c_talon: Welcome to this experience.
+[wait_input]
