@@ -3,7 +3,16 @@ c_talon: testing initial, before adding background image
 [background arg="res://assets/b_00_thebeginning.png" fade="0.5"]
 join c_talon right
 c_talon: I thought they were sending me a squad. You'd better be good.
-c_talon: What is your designation?
+c_talon: What is your specialization?
 - Assassin
-- 
+	c_talon: An assassin, huh? No wonder it's not on the dossier.
+	set {player.cha_class} = "assassin"
+- Pilot
+	c_talon: Ah, it was noted down here - guess your boss has never heard of filling out templates properly.
+	set {player.cha_class} = "pilot"
+- Saboteur
+	c_talon: Right. No wonder that's not on the dossier. Corpos would sniff that out in a half a cycle.
+	set {player.cha_class} = "saboteur"
+- Remain silent...
+	Suit yourself. But you'd better get the job done.
 [wait_input]

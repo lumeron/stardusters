@@ -34,10 +34,10 @@ overrides = {}
 script = ExtResource("1_inpaa")
 scene = ExtResource("5_qstf4")
 overrides = {
-"box_size": "Vector2(950, 250)",
-"name_label_custom_font_size": "40.0",
+"box_size": "Vector2(950, 100)",
+"name_label_custom_font_size": "30.0",
 "name_label_use_global_font_size": "false",
-"text_size": "30.0",
+"text_size": "20.0",
 "text_use_global_size": "false"
 }
 
@@ -78,4 +78,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("1_inpaa")]([])
-metadata/_latest_layer = "13"
+metadata/_latest_layer = "14"

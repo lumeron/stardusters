@@ -6,14 +6,28 @@ func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-	if Input.is_action_just_pressed("escape"):
-		if (self.visible):
-			self.visible = false
-		else:
-			self.visible = true
-	pass
+func _on_continue_button_pressed():
+	pass # Replace with function body.
+
+
+func _on_character_button_pressed():
+	pass # Replace with function body.
+
+
+func _on_new_game_button_pressed():
+	pass # Replace with function body.
+
+
+func _on_save_button_pressed():
+	pass # Replace with function body.
+
+
+func _on_load_game_button_pressed():
+	pass # Replace with function body.
+
+
+func _on_settings_button_pressed():
+	pass # Replace with function body.
 
 
 func _on_quit_button_pressed():
