@@ -2,5 +2,8 @@
 c_talon: testing initial, before adding background image
 [background arg="res://assets/b_00_thebeginning.png" fade="0.5"]
 join c_talon right
-c_talon: Welcome to this experience.
+c_talon: I thought they were sending me a squad. You'd better be good.
+c_talon: What is your designation?
+- Assassin
+- 
 [wait_input]

@@ -17,14 +17,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-custom_minimum_size = Vector2(2048, 1200)
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-color = Color(0.562958, 0.562958, 0.562958, 1)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 5
 
@@ -42,15 +34,48 @@ offset_right = 1024.0
 offset_bottom = 600.0
 script = ExtResource("2_vlet2")
 
-[node name="quit_button" type="Button" parent="CanvasLayer/MenuContainer/MainMenu"]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/MenuContainer/MainMenu"]
+custom_minimum_size = Vector2(1024, 600)
 layout_mode = 0
-offset_left = 504.0
-offset_top = 428.0
-offset_right = 543.0
-offset_bottom = 459.0
-text = "quit"
+offset_right = 1024.0
+offset_bottom = 600.0
+color = Color(0.67451, 0.67451, 0.67451, 0.839216)
+
+[node name="MenuButtonBox" type="VBoxContainer" parent="CanvasLayer/MenuContainer/MainMenu"]
+layout_mode = 0
+offset_left = 300.0
+offset_right = 724.0
+offset_bottom = 600.0
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="ContinueButton" type="Button" parent="CanvasLayer/MenuContainer/MainMenu/MenuButtonBox"]
+visible = false
+layout_mode = 2
+text = "Continue"
+
+[node name="CharacterButton" type="Button" parent="CanvasLayer/MenuContainer/MainMenu/MenuButtonBox"]
+visible = false
+layout_mode = 2
+text = "Character"
+
+[node name="NewGameButton" type="Button" parent="CanvasLayer/MenuContainer/MainMenu/MenuButtonBox"]
+layout_mode = 2
+text = "New Game"
+
+[node name="LoadGameButton" type="Button" parent="CanvasLayer/MenuContainer/MainMenu/MenuButtonBox"]
+layout_mode = 2
+text = "Load Game"
+
+[node name="SettingsButton" type="Button" parent="CanvasLayer/MenuContainer/MainMenu/MenuButtonBox"]
+layout_mode = 2
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="CanvasLayer/MenuContainer/MainMenu/MenuButtonBox"]
+layout_mode = 2
+text = "Exit"
 
 [node name="Game" type="Node2D" parent="."]
 script = ExtResource("1_dg2dl")
 
-[connection signal="pressed" from="CanvasLayer/MenuContainer/MainMenu/quit_button" to="CanvasLayer/MenuContainer/MainMenu" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/MenuContainer/MainMenu/MenuButtonBox/QuitButton" to="CanvasLayer/MenuContainer/MainMenu" method="_on_quit_button_pressed"]

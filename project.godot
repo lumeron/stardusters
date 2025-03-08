@@ -31,17 +31,18 @@ layout/style_list=["res://themes/t_dialogic_theme.tres"]
 layout/default_style="res://themes/t_dialogic_theme.tres"
 variables={
 "player": {
-"arcana": 0,
-"coins": 0,
-"credits": 0,
-"cyber": 0,
-"dexterity": 0,
+"att_arcana": 0,
+"att_cyber": 0,
+"att_dexterity": 0,
+"att_mechanical": 0,
+"att_strength": 0,
+"class": "vagrant",
 "has_armor": false,
 "has_weapon": false,
 "health": 10,
-"mechanical": 0,
-"name": "stranger",
-"strength": 0
+"inv_coins": 0,
+"inv_credits": 0,
+"name": "stranger"
 },
 "relationships": {
 "talon": 1
@@ -52,7 +53,7 @@ variables={
 
 window/size/viewport_width=1024
 window/size/viewport_height=600
-window/stretch/aspect="expand"
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
